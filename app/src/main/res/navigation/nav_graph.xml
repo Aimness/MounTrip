@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_menu">
+
+    <fragment
+        android:id="@+id/home_menu"
+        android:name="com.company.android.myapplication.Home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_menu_to_commentsFragment"
+            app:destination="@id/commentsFragment" />
+        <action
+            android:id="@+id/action_home_menu_to_followersFollowingsFragment"
+            app:destination="@id/followersFollowingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/search_menu"
+        android:name="com.company.android.myapplication.Search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/notification_menu"
+        android:name="com.company.android.myapplication.Notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notification_menu_to_commentsFragment"
+            app:destination="@id/commentsFragment" />
+        <action
+            android:id="@+id/action_notification_menu_to_profile_menu"
+            app:destination="@id/profile_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile_menu"
+        android:name="com.company.android.myapplication.Profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_menu_to_followersFollowingsFragment"
+            app:destination="@id/followersFollowingsFragment" />
+        <action
+            android:id="@+id/action_profile_menu_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/commentsFragment"
+        android:name="com.company.android.myapplication.CommentsFragment"
+        android:label="fragment_comments"
+        tools:layout="@layout/fragment_comments" >
+        <action
+            android:id="@+id/action_commentsFragment_to_search_menu"
+            app:destination="@id/search_menu" />
+        <action
+            android:id="@+id/action_commentsFragment_to_someUserProfileFragment"
+            app:destination="@id/someUserProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/someUserProfileFragment"
+        android:name="com.company.android.myapplication.SomeUserProfileFragment"
+        android:label="fragment_some_user_profile"
+        tools:layout="@layout/fragment_some_user_profile" >
+        <action
+            android:id="@+id/action_someUserProfileFragment_to_home_menu"
+            app:destination="@id/home_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/followersFollowingsFragment"
+        android:name="com.company.android.myapplication.FollowersFollowings.FollowersFollowingsFragment"
+        android:label="fragment_followers_followings"
+        tools:layout="@layout/fragment_followers_followings" >
+        <action
+            android:id="@+id/action_followersFollowingsFragment_to_someUserProfileFragment"
+            app:destination="@id/someUserProfileFragment" />
+        <action
+            android:id="@+id/action_followersFollowingsFragment_to_search_menu"
+            app:destination="@id/search_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.company.android.myapplication.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.company.android.myapplication.PostFragment"
+        android:label="fragment_post"
+        tools:layout="@layout/fragment_post" >
+        <action
+            android:id="@+id/action_postFragment_to_notification_menu"
+            app:destination="@id/notification_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.company.android.myapplication.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedPostsFragment"
+        android:name="com.company.android.myapplication.SavedPostsFragment"
+        android:label="fragment_saved_posts"
+        tools:layout="@layout/fragment_saved_posts" >
+        <action
+            android:id="@+id/action_savedPostsFragment_to_profile_menu"
+            app:destination="@id/profile_menu" />
+    </fragment>
+</navigation>

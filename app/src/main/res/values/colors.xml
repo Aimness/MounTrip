@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorWHite">#FFFFFF</color>
+    <color name="BackGreen">#262726</color>
+    <color name="colorHint">#FF262726</color>
+    <color name="transparent">#0000</color>
+    <color name="coloraGrayBack">#D5D4D4</color>
+    <color name="collorYellow">#EFD90E</color>
+    <color name="collorYellowDark">#EFA40E</color>
+    <color name="lightGray">#40EAE3E3</color>
+    <color name="appColor">#80d9b9</color>
+
+</resources>

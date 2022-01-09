@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.company.android.myapplication.ProfileActivity">
+    <item
+        android:id="@+id/nicknameTopBar"
+        android:title="nickname"
+        android:orderInCategory="50"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/addPost_profile"
+        android:icon="@drawable/add_post"
+        android:title="addpost"
+        android:orderInCategory="110"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/edit_profile"
+        android:orderInCategory="120"
+        android:icon="@drawable/settings"
+        android:title="Profile settings"
+        app:showAsAction="always" />
+
+
+</menu>

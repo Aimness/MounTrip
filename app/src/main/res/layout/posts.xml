@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:text="http://schemas.android.com/tools"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/colorWHite"
+    android:layout_margin="5dp"
+    android:background="@color/colorWHite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/posts_profile_picture"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/colorBlack"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/posts_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nicknameTop"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_regular"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/posts_country"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/colorBlack"/>
+
+                    <ImageButton
+                        android:id="@+id/posts_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/ic_more_white"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/days"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_regular"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/posts_days"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_regular"/>
+
+
+            <TextView
+                android:id="@+id/posts_distance"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+
+
+            <com.smarteist.autoimageslider.SliderView
+                android:background="@color/colorWHite"
+                android:id="@+id/posts_images"
+                android:layout_width="match_parent"
+                android:layout_height="416dp"
+                android:padding="5dp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:sliderAutoCycleEnabled="false"
+                app:sliderIndicatorEnabled="true"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="#FFF">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/posts_uploaded_map"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/placeholder"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="35dp" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/posts_difficulty"
+                    android:layout_marginRight="5dp"
+                    android:layout_margin="15dp"
+                    android:layout_gravity="right"
+                    />
+            </com.smarteist.autoimageslider.SliderView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/posts_likes"
+            android:background="@drawable/notification"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:id="@+id/posts_comments"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/comment"
+                android:layout_marginLeft="5dp"/>
+
+            <ImageView
+                android:id="@+id/posts_save"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/unsave"
+                android:layout_marginLeft="5dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/posts_likes_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/colorBlack" />
+
+
+
+        -<com.ms.square.android.expandabletextview.ExpandableTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandableTextView:maxCollapsedLines="4"
+            android:id="@+id/posts_description"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                android:layout_margin="10dp"/>
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/ic_read_more"
+                android:layout_marginRight="10dp"/>
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView> -
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

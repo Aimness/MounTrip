@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    tools:context=".CreatePostActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWHite">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_create_post"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/appColor"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/toolbar_create_post">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.hbb20.CountryCodePicker
+                app:ccp_showFullName="true"
+                app:ccp_showPhoneCode="false"
+                app:ccp_showNameCode="false"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                android:id="@+id/find_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edit_text"
+                app:ccp_defaultLanguage="ENGLISH" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/photo_description_layout"
+                android:paddingTop="10dp"
+                android:layout_below="@+id/find_country">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/slider_holder_layout">
+                    <com.smarteist.autoimageslider.SliderView
+                        android:id="@+id/slider_view_create_post"
+                        android:layout_width="150dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintDimensionRatio="1:1"
+                        android:padding="5dp"
+                        app:sliderAutoCycleDirection="back_and_forth"
+                        app:sliderIndicatorAnimationDuration="600"
+                        app:sliderIndicatorEnabled="false"
+                        app:sliderIndicatorGravity="center_horizontal|bottom"
+                        app:sliderIndicatorMargin="15dp"
+                        app:sliderIndicatorOrientation="horizontal"
+                        app:sliderIndicatorPadding="3dp"
+                        app:sliderIndicatorRadius="2dp"
+                        app:sliderIndicatorSelectedColor="#5A5A5A"
+                        app:sliderIndicatorUnselectedColor="#FFF"
+                        app:sliderScrollTimeInSec="1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:background="@drawable/custom_edit_text"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <EditText
+                    android:id="@+id/post_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Description"
+                    android:textColorHint="@color/colorHint"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/photo_description_layout">
+                <EditText
+                    android:hint="Kilometers"
+                    android:id="@+id/distance_create_post"
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/colorHint"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:textColor="@color/colorBlack" />
+                <Spinner
+                    android:id="@+id/spinner_difficulty_create_post"
+                    android:text="Difficulty"
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:popupBackground="@color/colorWHite"/>
+                <EditText
+                    android:id="@+id/days_create_post"
+                    android:hint="Days:"
+                    android:textColorHint="@color/colorBlack"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/custom_edit_text"
+                    android:textColor="@color/colorHint"
+                    android:paddingLeft="10dp"/>
+
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/uploaded_files_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/add_map"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_map_black"
+            android:background="#00000000"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

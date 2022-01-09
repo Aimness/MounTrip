@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "64102588024",
+    "project_id": "mountrip-7c4b8",
+    "storage_bucket": "mountrip-7c4b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64102588024:android:7e1f0c7955673a4150178d",
+        "android_client_info": {
+          "package_name": "com.company.android.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64102588024-48ttbj5h53p7l7mcvdsn4e5ccg386jfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDABznXBmIESy3nNbuUb4D98Bd0uID3z2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64102588024-48ttbj5h53p7l7mcvdsn4e5ccg386jfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

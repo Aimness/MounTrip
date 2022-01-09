@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Hiker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="nicknameTop">Nickname</string>
+    <string name="downloadMap">Download</string>
+    <string name="openMap">Open</string>
+    <string name="comments">Comments</string>
+    <string name="reply">Reply</string>
+    <string name="user_not_found">User not found :(</string>
+    <string name="settings">Setting</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="clear_all">clear</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="fragment_home">Home</string>
+    <string name="fragment_search">Search</string>
+    <string name="fragment_notification">Notification</string>
+    <string name="fragment_profile">Profile</string>
+    <string name="moun_trip">MounTrip</string>
+    <string name="registration">Registration</string>
+    <string name="login">Login</string>
+    <string name="saved_posts">Saved Posts</string>
+    <string name="days">Days:</string>
+    <string name="distance">Distance:</string>
+    <string name="logout">Log out</string>
+    <string name="filters">Filters</string>
+    <string name="change_photo">Change profile photo</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="example">Example</string>
+
+    <string name="access_token">sk.eyJ1IjoiYWltbmVzcyIsImEiOiJja3N0N2NpdnMwMGFuMm9wdTRtNzBxY2luIn0.lwK6YNaBs6NFijKd11zpcw</string>
+
+    <string name="new_location">Your location</string>
+    <string name="no_success">No routes found, make sure you set the right user and access token</string>
+    <string name="successful_but_no_routes">No routes found for that location</string>
+    <string name="null_in_response">%1$s is null.</string>
+    <string name="only_twelve_stops_allowed">Only 12 stops allowed on route. Press on the map and hold to clear markers.</string>
+    <string name="click_instructions">Tap on the map to select a maximum of 12 locations</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="complexity">
+        <item>1 level</item>
+        <item>2 level</item>
+        <item>3 level</item>
+        <item>4 level</item>
+    </string-array>
+</resources>

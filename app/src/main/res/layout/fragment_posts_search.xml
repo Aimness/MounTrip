@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Search.PostsSearchFragment"
+    android:orientation="vertical"
+    android:background="@color/colorWHite"
+    android:layout_margin="15dp">
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/filters"
+            android:layout_alignParentStart="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filters"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:layout_marginBottom="10dp"
+            />
+
+         <Spinner
+             android:layout_below="@id/filters"
+             android:layout_width="150dp"
+             android:layout_height="40dp"
+             android:layout_marginRight="20dp"
+             android:id="@+id/filter_picker_post"
+             android:dropDownHeight="100dp"
+             android:popupBackground="@color/colorWHite"/>
+
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/filters"
+            android:layout_toRightOf="@+id/filter_picker_post"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/filter_parameters"
+            android:popupBackground="@color/colorWHite"
+            style="@style/AppTheme"/>
+
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/filter_date"
+        android:popupBackground="@color/colorWHite"
+        android:layout_below="@id/filter_picker_post"/>
+    <Button
+        android:layout_below="@id/filter_picker_post"
+        android:layout_toRightOf="@+id/filter_date"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/search_post_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:textColor="@color/colorBlack"
+        android:text="Search"
+        android:layout_gravity="right"
+        android:textSize="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_post_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_post_button"/>
+
+</RelativeLayout>

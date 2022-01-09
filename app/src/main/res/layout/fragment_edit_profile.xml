@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditProfileFragment"
+    android:background="@color/colorWHite">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        android:background="@color/appColor"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        <ImageView
+            android:id="@+id/edit_profile_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profile"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="30dp"/>
+
+        <ImageView
+            android:id="@+id/edit_profile_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_black"
+            android:layout_marginLeft="200dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar_edit_profile"
+        android:id="@+id/container_photo_edit_profile"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar_edit_profile"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/man"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorBlack"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_photo"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+    <EditText
+
+        android:layout_below="@id/container_photo_edit_profile"
+        android:id="@+id/nameEditProfile"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/appColor"
+        android:hint="name"
+        android:background="@drawable/custom_edit_text"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:textColor="@color/colorBlack"/>
+
+    <EditText
+        android:layout_below="@id/nameEditProfile"
+        android:id="@+id/nicknameEditProfile"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="nickname"
+        android:textColorHint="@color/appColor"
+        android:maxLines="1"
+        android:background="@drawable/custom_edit_text"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"/>
+
+    <EditText
+        android:id="@+id/bioEditProfile"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nicknameEditProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="BIO"
+        android:background="@drawable/custom_edit_text"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/appColor"
+        android:maxLines="2"/>
+
+    <EditText
+        android:background="@drawable/custom_edit_text"
+        android:padding="10dp"
+        android:id="@+id/websiteEditProfile"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bioEditProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="website"
+        android:maxLines="2"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/appColor"/>
+
+</RelativeLayout>
